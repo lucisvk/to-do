@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Task Master - Login</title>
+  <link rel="stylesheet" href="login.css" />
+</head>
+<body>
+
+  <header>
+    <h1>Task Master</h1>
+    <p class="tagline">Welcome back!</p>
+  </header>
+
+<!-- background contengent s-->
+  <div class="stars"></div>
+  <div class="shooting-star"></div>
+  <div class="shooting-star"></div>
+  <div class="shooting-star"></div>
+  <div class="shooting-star"></div>
+  <div class="shooting-star"></div>
+
+
+
+
+  <div class="login-credentials">
+    <form id="loginForm">
+      <div class="custom-field two">
+        <input type="text" id="username" name="username" required placeholder=" ">
+        <span class="placeholder">Email Address</span>
+        <div class="error-message" id="username-error"></div>
+      </div>
+
+      <div class="custom-field two">
+        <input type="password" id="password" name="password" required placeholder=" ">
+        <span class="placeholder">Password</span>
+        <div class="error-message" id="password-error"></div>
+      </div>
+
+      <button class="Signin" type="submit">Sign In</button>
+    </form>
+  </div>
+
+  <script src="login.js"></script>
+</body>
+</html>
