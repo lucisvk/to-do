@@ -176,7 +176,7 @@ body {
     color: #ffffff;
   }
   
-  /* Error message */
+
   .error-message {
     font-size: 12px;
     color: #fff;
@@ -193,7 +193,7 @@ body {
     color: #fff;
 
   }
-  /* Button */
+
   .Signin {
     width: 100%;
     padding: 12px;
@@ -208,4 +208,15 @@ body {
   
   .Signin:hover {
     background-color: #415a77;
+  }
+
+
+  .error-message {
+    display: none;
+    font-size: 12px;
+    background: #d30909;
+    color: rgb(0, 0, 0);
+    padding: 4px 8px;
+    border-radius: 4px;
+    margin-top: 5px;
   }

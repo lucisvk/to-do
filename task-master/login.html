@@ -4,18 +4,11 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Task Master - Login</title>
-  <link rel="stylesheet" href="login.css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="javascript" herf="login.js"/>
+  <link rel="stylesheet" href="/css/login.css" />
 </head>
 <body>
 
-  <header>
-    <h1>Task Master</h1>
-    <p class="tagline">Welcome back!</p>
-  </header>
-
-<!-- background contengent s-->
+  <!-- Background stars (purely visual) -->
   <div class="stars"></div>
   <div class="shooting-star"></div>
   <div class="shooting-star"></div>
@@ -23,11 +16,13 @@
   <div class="shooting-star"></div>
   <div class="shooting-star"></div>
 
-
-
+  <header>
+    <h1>Task Master</h1>
+    <p class="tagline">Welcome back!</p>
+  </header>
 
   <div class="login-credentials">
-    <form id="loginForm">
+    <form onsubmit="return loginvalidation()" id="loginForm">
       <div class="custom-field two">
         <input type="text" id="username" name="username" required placeholder=" ">
         <span class="placeholder">Email Address</span>
@@ -40,16 +35,20 @@
         <div class="error-message" id="password-error"></div>
       </div>
 
-      <div class="reset"><a href="Reset Password">Reset Password</a></p></div>
+      <div class="reset">
+        <a href="reset.html">Reset Password</a>
+      </div>
 
       <button class="Signin" type="submit">Sign In</button>
+
+      <div class="error-message" id="login-error"></div>
     </form>
   </div>
 
+  <div class="login-footer">
+    <p>Don't have an account? <a href="signup.html">Sign Up</a></p>
+  </div>
 
-  
-    <div class="login-footer">
-        <p>Don't have an account? <a href="signup.html">Sign Up</a></p>
-    </div>
+  <script src="/js/login.js"></script>
 </body>
 </html>
