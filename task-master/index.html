@@ -7,15 +7,20 @@
   <link rel="stylesheet" href="/css/homepage.css">
 </head>
 <body>
-  <h1>TaskMaster</h1>
-
-  <div class="list-section">
+  <div class="container">
     <aside class="sidebar">
-      <ul id="task-lists">
-        <li contenteditable="true" class="list-item">New List</li>
-      </ul>
-      <button onclick="createlist()" id="add-list-btn">Add New List</button>
+      <h2>TaskMaster 📋 </h2>
+      <div id="task-lists">
+       
+        <div class="list-item" contenteditable="true">New List</div>
+      </div>
+      <button id="add-list-btn">+ Add New List</button>
     </aside>
+
+    <main class="main-content">
+      <h2>Welcome to TaskMaster</h2>
+      <p>Select a list or create a new one to begin.</p>
+    </main>
   </div>
 
   <script src="/js/homepage.js"></script>

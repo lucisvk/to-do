@@ -1,11 +1,10 @@
-function createlist() {
-    const listContainer = document.getElementById("task-lists");
+document.getElementById("add-list-btn").addEventListener("click", () => {
+    const taskLists = document.getElementById("task-lists");
   
-    const newList = document.createElement("li");
-    newList.textContent = "New List";
+    const newList = document.createElement("div");
+    newList.className = "list-item";
     newList.contentEditable = true;
-    newList.classList.add("list-item");
+    newList.textContent = "New List";
   
-
-    listContainer.appendChild(newList);
-  }
+    taskLists.appendChild(newList);
+  });
