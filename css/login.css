@@ -190,7 +190,9 @@ body {
   .reset{ 
     margin-top: 20px;
     margin-left: 89px;
-    color: #fff;
+    color: #ffffff;
+    cursor : pointer;
+    transition: color 0.3s ease;
 
   }
 
