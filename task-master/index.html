@@ -8,10 +8,10 @@
 </head>
 <body>
   <div class="container">
+    
     <aside class="sidebar">
-      <h2>TaskMaster 📋 </h2>
+      <h2>TaskMaster 📋</h2>
       <div id="task-lists">
-       
         <div class="list-item" contenteditable="true">New List</div>
       </div>
       <button id="add-list-btn">+ Add New List</button>
@@ -19,8 +19,34 @@
 
     <main class="main-content">
       <h2>Welcome to TaskMaster</h2>
-      <p>Select a list or create a new one to begin.</p>
+
+      <div class="calendar-sec">
+        <h2>Calendar</h2>
+        <div id="calendar"></div>
+        <div class="calendar">
+          <header>
+            <h3></h3>
+            <nav>
+              <button id="prev"></button>
+              <button id="next"></button>
+            </nav>
+          </header>
+          <section>
+            <ul class="days">
+              <li>Sun</li>
+              <li>Mon</li>
+              <li>Tue</li>
+              <li>Wed</li>
+              <li>Thu</li>
+              <li>Fri</li>
+              <li>Sat</li>
+            </ul>
+            <ul class="dates"></ul>
+          </section>
+        </div>
+      </div>
     </main>
+
   </div>
 
   <script src="/js/homepage.js"></script>

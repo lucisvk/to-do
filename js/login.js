@@ -3,11 +3,9 @@ function loginvalidation() {
     const password = document.getElementById("password").value.trim();
     const loginError = document.getElementById("login-error");
   
-
     loginError.textContent = "";
     loginError.style.display = "none";
   
-    
     if (username !== "t" || password !== "l") {
       loginError.textContent = "Invalid credentials";
       loginError.style.color = "red";
